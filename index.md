@@ -1,29 +1,22 @@
-library(magick)
+# About My Original Meme
 
-spongebob_happy <- image_read("https://i.imgflip.com/697gxz.jpg") %>% image_scale(300)
+**This meme was inspired by:**
+1. *Struggles of a Univeristy student going through online lectures* 
+2. *Spongebob because many popular memes on the web are inspired by Spongebob*
+3. *The comfort and laughs from reading memes*
 
-spongebob_sad<- image_read("https://i.imgflip.com/5l3pc.jpg") %>% image_scale(300)
-#Top Meme
-kdrama_text <- image_blank(width = 560, height = 385, 
-                           color = "#f2f2f2") %>% 
-               image_annotate(text = "Watching 16 episodes k-drama",
-                           color = "#000000", size = 40, 
-                           font = "sans-serif", gravity = "center")
+These inspirations led me to put together an original meme. 
 
-happy_vector <- c(spongebob_happy, kdrama_text) %>%
-                image_append()
-#Bottom Meme
-lecture_text <- image_blank(width = 560, height = 222, 
-                               color = "#f2f2f2") %>% 
-                image_annotate(text = "Watching 1 hour lecture",
-                               color = "#000000", size = 40, 
-                               font = "sans-serif", gravity = "center")
-sad_vector <- c(spongebob_sad, lecture_text) %>%image_append()
+## Memes are Fun!
+Here is the meme I developed using R with the package [{magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html).
+
+![](my_meme.png)
+
+## Meme Source
+
+The images were sourced from two websites linked below:
+
+* First row image: *[Happy Spongebob](https://imgflip.com/i/697gxz)*
+* Second row image: *[Upset Spongebob](https://imgflip.com/memetemplate/9382656/Angry-Spongebob)*
 
 
-#Completed Meme
-meme <- c(happy_vector, sad_vector) %>%
-  image_append(stack = TRUE)
-
-#save as image
-image_write(meme, "my_meme.png")
