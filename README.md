@@ -1,5 +1,6 @@
-<h1> Stats 220 Repo </h1>
-<p> This is my Stats 220 Repo.</p>
-<p> I will use this repo to display projects completed in Stats 220. </p>
+## :computer: Welcome to Stats 220 Repo! :smiley:
+This is my repo for Stats 220.
 
-*Feel free to browse through my projects https://github.com/marymading?tab=repositories*
+I will use this repo to display projects completed throughout Stats 220.
+
+*Feel free to browse through my projects :point_right:[Here]( https://github.com/marymading?tab=repositories)*.
